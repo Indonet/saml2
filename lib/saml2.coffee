@@ -71,7 +71,7 @@ create_metadata = (entity_id, assert_endpoint, signing_certificates, encryption_
       '@xmlns:md': XMLNS.MD
       '@xmlns:ds': XMLNS.DS
       '@entityID': entity_id
-      '@validUntil': (new Date(Date.now() + 1000 * 60 * 60)).toISOString()
+      '@validUntil': (new Date(Date.now() + 1000 * 60 * 60 * 24)).toISOString()
       'md:SPSSODescriptor':
         '@protocolSupportEnumeration': 'urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol'
         'md:KeyDescriptor': signing_cert_descriptors.concat(encryption_cert_descriptors)
