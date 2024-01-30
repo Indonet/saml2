@@ -1,12 +1,7 @@
-# IDE Files
-#-------------------------
-/nbproject/
-.idea/*
-
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
-
+*~
+node_modules
+lib-js
+*.html
+package-lock.json
+coverage
+.nyc_output/
